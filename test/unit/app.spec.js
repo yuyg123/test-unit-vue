@@ -1,6 +1,6 @@
 /**
  * @file app.vue测试用例
- * @author MarxJiao
+ * @author yuyg
  */
 
 // 引用vue
@@ -11,14 +11,14 @@ import app from '../../src/app.vue';
 
 // 描述要测试的内容
 describe('test app.vue', () => {
-    
+
     // 描述要测试的最小单元
     it('组件加载后，title应该是Holle world', () => {
 
         // 这里将app生成vue实例，并使用 $mount() 模拟挂载状态
         let vm = new Vue(app).$mount();
         // 断言组件的title是否变为了'Hello world'
-        expect(vm.title).toEqual('Hello world');
+        expect(vm.title).toEqual('Hell world');
     });
 
     // 描述要测试的最小单元
@@ -60,4 +60,3 @@ describe('test app.vue', () => {
         })
     });
 });
-    
